@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { TGeneratedStage } from 'src/types';
 import { orange, green, blue } from '@mui/material/colors';
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import { weatherTypeRaw } from '../../generator/utils';
 
 const Stage = ({ stage, idx }: { stage: TGeneratedStage, idx: number }) => {
@@ -34,15 +34,18 @@ const Stage = ({ stage, idx }: { stage: TGeneratedStage, idx: number }) => {
   return (
     <Card sx={{ minWidth: 275 }} variant='outlined'>
       <CardContent>
-        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14, marginTop: "-10px" }}>
-          spécial n°{idx + 1}
-        </Typography>
-        <Typography sx={{ fontSize: 18, height: "75px" }}>
+        <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ marginTop: "-10px", mb: "10px" }}>
+          <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14, }}>
+            spécial n°{idx + 1}
+          </Typography>
+          <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
+            {stage.length}km
+          </Typography>
+        </Stack>
+        <Typography sx={{ fontSize: 18, height: "55px" }}>
           {stage.name}
         </Typography>
-        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 16 }}>
-          {stage.length}km
-        </Typography>
+
         <Typography sx={{ fontSize: 16, height: "30px", color: assistColor }}>
           {stage.assist && `Assistance ${stage.assist}`}
         </Typography>
