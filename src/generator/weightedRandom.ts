@@ -23,7 +23,7 @@ export const updateChoiceWeight = (
   newValue: number
 ): number[] => [...oldTab.slice(0, idx), newValue, ...oldTab.slice(idx + 1)];
 
-const testRandom = () => {
+export const testRandom = () => {
   const choices = [3, 7, 9, 11];
   const weights = [0.1, 0.6, 0.6, 0.1];
 
@@ -44,7 +44,7 @@ const testRandom = () => {
   return sortResult;
 };
 
-export const convertPercent = (tab) => {
+export const convertPercent = (tab: number[]) => {
   const total = tab.reduce((acc, curr) => acc + curr, 0);
   return tab.map((val) => Math.round((val * 100) / total));
 };

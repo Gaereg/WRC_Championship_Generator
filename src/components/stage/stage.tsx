@@ -34,14 +34,14 @@ const Stage = ({ stage, idx }: { stage: TGeneratedStage, idx: number }) => {
   return (
     <Card sx={{ minWidth: 275 }} variant='outlined'>
       <CardContent>
-        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14, marginTop: "-10px"}}>
+        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14, marginTop: "-10px" }}>
           spécial n°{idx + 1}
         </Typography>
         <Typography sx={{ fontSize: 18, height: "75px" }}>
           {stage.name}
-          <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 16 }}>
-            {stage.length}km
-          </Typography>
+        </Typography>
+        <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 16 }}>
+          {stage.length}km
         </Typography>
         <Typography sx={{ fontSize: 16, height: "30px", color: assistColor }}>
           {stage.assist && `Assistance ${stage.assist}`}

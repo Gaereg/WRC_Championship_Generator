@@ -67,12 +67,13 @@ const generateWeather = (
 ) => {
   const prevType =
     prevStage?.weather?.type || weathersType[Math.floor(Math.random() * 2)];
-  let weatherType: TWeatherType;
-  do {
+  let weatherType: TWeatherType = weightedRandom(weathersType, weatherWeight[prevType]);
+  
+  while (!isWeatherIsCorrect(prevType, weatherType, weathers)) {
     weatherType = weightedRandom(weathersType, weatherWeight[prevType]);
-  } while (!isWeatherIsCorrect(prevType, weatherType, weathers));
+  };
 
-  const weatherChoices = weathers[weatherTypeRaw(weatherType)];
+  const weatherChoices: TWeatherData[] = weathers[weatherTypeRaw(weatherType)]!;
   const weatherData = weightedRandom(
     weatherChoices,
     weatherWeight.weathersChoiceWeight[weatherType]
@@ -103,6 +104,8 @@ export const generateStages = (
   let nbKmSinceLastAssist = 0;
   let rally: TGeneratedStage[] = [];
   let weights = Array(stages.length).fill(1);
+
+  if (!weathers[season]) throw `Data error no weather for ${season}`
   const weatherWeight = createWeatherWeight(season, weathers[season]);
 
   while (rallyDistance < duration - 2) {

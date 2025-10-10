@@ -7,7 +7,6 @@ import { useState } from 'react';
 import Container from '@mui/material/Container';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Accordion, AccordionDetails, AccordionSummary, AppBar, Box, Button, Divider, InputAdornment, Stack, TextField, Typography, } from '@mui/material';
-import { NumberField } from '@base-ui-components/react/number-field';
 
 import CardButtonGroup from '@components/CardButtonGroup/CardButtonGroup';
 

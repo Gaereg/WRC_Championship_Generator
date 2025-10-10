@@ -4,6 +4,7 @@ import {
   TSeason,
   TWeatherType,
   TWeather,
+  TWeatherTypeRaw,
 } from "src/types";
 
 export const isStageIsCorrect = (
@@ -53,7 +54,7 @@ export const isLocationIsCorrect = (
   return true;
 };
 
-export const weatherTypeRaw = (type: TWeatherType) =>
+export const weatherTypeRaw = (type: TWeatherType): TWeatherTypeRaw =>
   type === "basicClear" || type === "basicCloud" ? "basic" : type;
 
 export const isWeatherIsCorrect = (
@@ -75,9 +76,9 @@ export const createWeatherWeight = (season: TSeason, weathers: TWeather) => {
   };
 
   const weathersPrecipWeight = {
-    light_precip: Array(weathers["light_precip"].length).fill(1),
-    heavy_precip: Array(weathers["light_precip"].length).fill(1),
-    extreme: Array(weathers["light_precip"].length).fill(1),
+    light_precip: Array(weathers["light_precip"]?.length).fill(1),
+    heavy_precip: Array(weathers["light_precip"]?.length).fill(1),
+    extreme: Array(weathers["light_precip"]?.length).fill(1),
   };
 
   return {

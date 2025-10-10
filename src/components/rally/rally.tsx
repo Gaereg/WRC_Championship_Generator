@@ -36,7 +36,7 @@ const Rally = ({ rally }: { rally: TRally }) => {
           display: "grid", width: "100%", gridTemplateColumns: 'repeat(auto-fill, minmax(min(300px, 100%), 1fr))',
           gap: 2,
         }}>
-          {rally.stages.map((stage, idx) => <Stage stage={stage} idx={idx} />)}
+          {rally.stages.map((stage, idx) => <Stage stage={stage} idx={idx} key={`raly-stage-${idx}`}/>)}
         </Box>
       </AccordionDetails>
     </Accordion>
