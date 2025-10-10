@@ -1,0 +1,39 @@
+{
+  "WRC2 2024": [
+    {
+      "name": "Monte Carlo",
+      "type": "Asphalt",
+      "season": "Printemps"
+    },
+    {
+      "name": "Sweden",
+      "type": "Snow",
+      "season": "Hiver"
+    },
+    {
+      "name": "Portugal",
+      "type": "Dirt",
+      "season": "Printemps"
+    },
+    {
+      "name": "Poland",
+      "type": "Dirt",
+      "season": "Été"
+    },
+    {
+      "name": "Chile",
+      "type": "Dirt",
+      "season": "Printemps"
+    },
+    {
+      "name": "Central Europe",
+      "type": "Asphalt",
+      "season": "Automne"
+    },
+    {
+      "name": "Japan",
+      "type": "Asphalt",
+      "season": "Automne"
+    }
+  ]
+}

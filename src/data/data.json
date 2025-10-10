@@ -1,0 +1,7469 @@
+{
+  "Monte Carlo": {
+    "type": "Asphalt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "glace"
+            ],
+            "nextState": [
+              "glace"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "glace"
+            ],
+            "nextState": [
+              "glace"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "glace"
+            ],
+            "nextState": [
+              "glace"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "glace"
+            ],
+            "nextState": [
+              "glace"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "glace"
+            ],
+            "nextState": [
+              "glace"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "glace"
+            ],
+            "nextState": [
+              "glace"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "id": 1,
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - La Bollene - Vesubie - Peira Cava",
+        "length": 18.50
+      },
+      {
+        "id": 2,
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Peira Cava - La Bollene - Vesubie",
+        "length": 18.20
+      },
+      {
+        "id": 3,
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - La Bollene - Vesubie - Col de Turini",
+        "length": 9.20
+      },
+      {
+        "id": 4,
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Pra d'Alart",
+        "length": 8.90
+      },
+      {
+        "id": 5,
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - La Mairis",
+        "length": 9.30
+      },
+      {
+        "id": 6,
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Baisse de Patronel",
+        "length": 9.30
+      },
+      {
+        "id": 7,
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Saint-Leger-les-Melezes - La Batie-Neuve",
+        "length": 16.80
+      },
+      {
+        "id": 8,
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - La Batie-Neuve - Saint-Leger-les-Melezes",
+        "length": 16.60
+      },
+      {
+        "id": 9,
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Moissiere",
+        "length": 8.20
+      },
+      {
+        "id": 10,
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Ancelle",
+        "length": 8.00
+      },
+      {
+        "id": 11,
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Ravin de Coste Belle",
+        "length": 8.60
+      },
+      {
+        "id": 12,
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Les Borels",
+        "length": 8.60
+      },
+      {
+        "id": 13,
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#13 - Briançonnet - Entrevaux",
+        "length": 14.30
+      },
+      {
+        "id": 14,
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#14 - Entrevaux - Briançonnet",
+        "length": 13.70
+      },
+      {
+        "id": 15,
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#15 - Les Vénières",
+        "length": 6.90
+      },
+      {
+        "id": 16,
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#16 - Parbiou",
+        "length": 6.20
+      },
+      {
+        "id": 17,
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#17 - Le Champ",
+        "length": 7.40
+      },
+      {
+        "id": 18,
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#18 - Pertus",
+        "length": 7.40
+      }
+    ]
+  },
+  "Sweden": {
+    "type": "Snow",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Hof-Finnskog",
+        "length": 21.5,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Asnes",
+        "length": 21.5,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Spikbrenna",
+        "length": 11.1,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Lauksjoen",
+        "length": 11,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Aslia",
+        "length": 10.4,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Knapptjernet",
+        "length": 10.5,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Vargasen",
+        "length": 8.2,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Lovstaholm",
+        "length": 8.2,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Algsjon",
+        "length": 3.4,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Eksharad",
+        "length": 3.4,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Stora Jangen",
+        "length": 4.9,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Sunne",
+        "length": 4.9,
+        "id": 12
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#13 - Umea",
+        "length": 10.8,
+        "id": 13
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#14 - Sandbacka",
+        "length": 10.8,
+        "id": 14
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#17 - Umea Sprint",
+        "length": 5.2,
+        "id": 15
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#18 - Haga",
+        "length": 5,
+        "id": 16
+      }
+    ]
+  },
+  "Mexico": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - El Chocolate",
+        "length": 26.7,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Otates",
+        "length": 24.7,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Ortega",
+        "length": 13.1,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Las Minas",
+        "length": 11.5,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Ibarilla",
+        "length": 12.9,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Derramadero",
+        "length": 7.2,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#7 - El Brinco",
+        "length": 10.5,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#8 - Guanajuatito",
+        "length": 10.6,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Alfaro",
+        "length": 8,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#10 - Mesa Cuata",
+        "length": 8.8,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - San Diego",
+        "length": 5.8,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - El Mosquito",
+        "length": 6.8,
+        "id": 12
+      }
+    ]
+  },
+  "Croatia": {
+    "type": "Asphalt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Bliznec",
+        "length": 25.6,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Trakoscan",
+        "length": 25.6,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Vrbno",
+        "length": 12.7,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Zagorska Sela",
+        "length": 12.7,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Kumrovec",
+        "length": 12.9,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Grdanjci",
+        "length": 12.9,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#7 - Stojdraga",
+        "length": 10.2,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#8 - Mali Lipovec",
+        "length": 10.2,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Hartje",
+        "length": 7.8,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Kostanjevic",
+        "length": 8.7,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Krasic",
+        "length": 8.8,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Petrus Vrh",
+        "length": 8.8,
+        "id": 12
+      }
+    ]
+  },
+  "Portugal": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Baiao",
+        "length": 30.3,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Caminha",
+        "length": 31.2,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Fridao",
+        "length": 16.7,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#4 - Marao",
+        "length": 15.1,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#5 - Ponte de Lima",
+        "length": 14.8,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Viana do Castelo",
+        "length": 7.9,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#7 - Ervideiro",
+        "length": 7.3,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#8 - Celeiro",
+        "length": 8.2,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Touca",
+        "length": 7.5,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Vila Boa",
+        "length": 7.4,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Carrazedo",
+        "length": 7.5,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Anjos",
+        "length": 7.4,
+        "id": 12
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#13 - Fafe",
+        "length": 11.3,
+        "id": 13
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#14 - Vila Pouca",
+        "length": 11,
+        "id": 14
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#15 - Barbosa",
+        "length": 5.7,
+        "id": 15
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#16 - Passos",
+        "length": 5.5,
+        "id": 16
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#17 - Moreira do Rei",
+        "length": 5.5,
+        "id": 17
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#18 - Ruivães",
+        "length": 5.5,
+        "id": 18
+      }
+    ]
+  },
+  "Italia Sardegna": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Rena Majore",
+        "length": 31.5,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Monte Olia",
+        "length": 31.6,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Littichedda",
+        "length": 13.3,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#4 - Ala del Sardi",
+        "length": 18.2,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#5 - Mamone",
+        "length": 16.5,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - La Pinnenti",
+        "length": 7.6,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#7 - Malti",
+        "length": 7.7,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#8 - Bassacutena",
+        "length": 7.6,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Bortigiadas",
+        "length": 9,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Sa Mela",
+        "length": 9.1,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Monte Muvri",
+        "length": 7.6,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Monte Acuto",
+        "length": 7.4,
+        "id": 12
+      }
+    ]
+  },
+  "Kenya": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Malewa",
+        "length": 9.7,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Tarambete",
+        "length": 9.6,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Moi North",
+        "length": 5.5,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Marula",
+        "length": 5.5,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Wileli",
+        "length": 4.9,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Kingono",
+        "length": 4.4,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Soysambu",
+        "length": 20.7,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Mbaruk",
+        "length": 20.2,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Sugunoi",
+        "length": 9.7,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Nakuru",
+        "length": 10,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Kanyawa",
+        "length": 10.7,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Kanyawa - Nakura",
+        "length": 10.7,
+        "id": 12
+      }
+    ]
+  },
+  "Estonia": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Otepaa",
+        "length": 17.1,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Rebaste",
+        "length": 17.1,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Nupli",
+        "length": 8.6,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Truuta",
+        "length": 8.6,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Koigu",
+        "length": 8.5,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Kooraste",
+        "length": 8.5,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Elva",
+        "length": 11.8,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Metasaane",
+        "length": 11.6,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Vahessaare",
+        "length": 6.2,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Kulaaseme",
+        "length": 6.2,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Vissi",
+        "length": 5.6,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Vellavere",
+        "length": 5.6,
+        "id": 12
+      }
+    ]
+  },
+  "Finland": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Leustu",
+        "length": 11.1,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Lahdenkyla",
+        "length": 11,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Saakoski",
+        "length": 4.8,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Maahi",
+        "length": 4.7,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Painaa",
+        "length": 6.4,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Peltola",
+        "length": 6.1,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#7 - Paijala",
+        "length": 22.9,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#8 - Ruokolahti",
+        "length": 22.9,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Konkanen",
+        "length": 10.4,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#10 - Venkajarvi",
+        "length": 10.4,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Vehmas",
+        "length": 12.6,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Hatanpaa",
+        "length": 12.5,
+        "id": 12
+      }
+    ]
+  },
+  "Greece": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Gravia",
+        "length": 24.6,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Prosilio",
+        "length": 24.6,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Mariolata",
+        "length": 13.5,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Karoutes",
+        "length": 13.5,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Viniani",
+        "length": 11.1,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Delphi",
+        "length": 11.1,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#7 - Eptalofos",
+        "length": 10.4,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#8 - Lilea",
+        "length": 10.4,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Parnassos",
+        "length": 5.6,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Bauxites",
+        "length": 5.6,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Drosochori",
+        "length": 8.7,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Amfissa",
+        "length": 8.7,
+        "id": 12
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#13 - Harvati",
+        "length": 14.1,
+        "id": 13
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#14 - Pisia",
+        "length": 14.2,
+        "id": 14
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#15 - Drosopigi - Aghia Trida",
+        "length": 8.8,
+        "id": 15
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#16 - Perachora ",
+        "length": 8.8,
+        "id": 16
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#17 - Irini - Schinos",
+        "length": 8.3,
+        "id": 17
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#18 - Posidonia ",
+        "length": 8.2,
+        "id": 18
+      }
+    ]
+  },
+  "Chile": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Bio Bio",
+        "length": 34.7,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Pulperia",
+        "length": 34.8,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Rio Lia",
+        "length": 18,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#4 - Maria Las Cruces",
+        "length": 16.7,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#5 - Las Pataguas",
+        "length": 16.9,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Rere",
+        "length": 10.8,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#7 - El Ponen",
+        "length": 10.1,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#8 - Laja",
+        "length": 7.9,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#9 - Yumbel",
+        "length": 7.8,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#10 - Rio Claro",
+        "length": 8.2,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#11 - Hualqui",
+        "length": 8.1,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#12 - Chivilingo",
+        "length": 8.5,
+        "id": 12
+      }
+    ]
+  },
+  "Japan": {
+    "type": "Asphalt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Lake Mikawa",
+        "length": 19.9,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Kudarisawa",
+        "length": 19.9,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Oninotaira",
+        "length": 11.4,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Okuwacho",
+        "length": 11.4,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Habu Dam",
+        "length": 10.3,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Habucho",
+        "length": 10.3,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Nenoue Plateau",
+        "length": 13.7,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Tegano",
+        "length": 13.7,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Higashino",
+        "length": 6.9,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Hokono Lake",
+        "length": 6.9,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Nenoue Highlands",
+        "length": 6.8,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Nakatsugawa",
+        "length": 6.8,
+        "id": 12
+      }
+    ]
+  },
+  "Mediterraneo": {
+    "type": "Asphalt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Asco",
+        "length": 29.2,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Ponte",
+        "length": 28.6,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Monte Cinto",
+        "length": 15.2,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#4 - Albarello",
+        "length": 16.2,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#5 - Capannace",
+        "length": 20.5,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Serra Di Cuzzioli",
+        "length": 7.7,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#7 - Maririe",
+        "length": 8.5,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#8 - Poggiola",
+        "length": 8.5,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Monte Alloradu",
+        "length": 10.7,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Ravin de Finelio",
+        "length": 9.5,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Cabanella",
+        "length": 10.1,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Moltifao",
+        "length": 11.2,
+        "id": 12
+      }
+    ]
+  },
+  "Pacifico": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Talao",
+        "length": 31.4,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Talanghilirair",
+        "length": 32.4,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Sungai Kunit",
+        "length": 14.6,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Sangir Balai Janggo",
+        "length": 15.5,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - South Solok",
+        "length": 16.9,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Kebun Raya Solok",
+        "length": 8.7,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#7 - Batukangkung",
+        "length": 8.8,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#8 - Abai",
+        "length": 5.4,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#9 - Moearaikoer",
+        "length": 6.3,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#10 - Bidaralam",
+        "length": 7.7,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#11 - Loeboekmalaka",
+        "length": 7.7,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#12 - Gunung Tujuh",
+        "length": 9.1,
+        "id": 12
+      }
+    ]
+  },
+  "Oceania": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Oakleigh",
+        "length": 11,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#2 - Doctors Hill",
+        "length": 11,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Mangapai",
+        "length": 6.6,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Brynderwyn",
+        "length": 6.6,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Taipuha",
+        "length": 4.4,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Mareretu",
+        "length": 4.4,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Waiwera",
+        "length": 18,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Tahekeroa",
+        "length": 18,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Noakes Hill",
+        "length": 9.5,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Orewa",
+        "length": 9.5,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Takekeroa - Orewa",
+        "length": 8.5,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Makarau",
+        "length": 8.6,
+        "id": 12
+      }
+    ]
+  },
+  "Scandia": {
+    "type": "Snow",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Holtjonn",
+        "length": 30.9,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Hengeltjonn",
+        "length": 31.8,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Fyresvatn",
+        "length": 17.1,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Russvatn",
+        "length": 16.8,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Tovsli",
+        "length": 13.8,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#6 - Kottjonn",
+        "length": 6.6,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#7 - Fordol",
+        "length": 6.1,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#8 - Fyresdal",
+        "length": 5.4,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Ljosdalstjonn",
+        "length": 9.4,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Dagtrolltjonn",
+        "length": 9.3,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Tovslioytjorn",
+        "length": 7.5,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Bergsoytjonn",
+        "length": 7.3,
+        "id": 12
+      }
+    ]
+  },
+  "Iberia": {
+    "type": "Asphalt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Santes Creus",
+        "length": 19,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Valldossera",
+        "length": 19,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Campdasens",
+        "length": 9.7,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Pontils",
+        "length": 9.7,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Montagut",
+        "length": 9.2,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Aiguamurcia",
+        "length": 9.2,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Alforja",
+        "length": 16.3,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Les Irles",
+        "length": 16.3,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - L'Argentera",
+        "length": 8.9,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Les Voltes",
+        "length": 8.9,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Montclar",
+        "length": 7.3,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Botareli",
+        "length": 7.3,
+        "id": 12
+      }
+    ]
+  },
+  "Central Europe": {
+    "type": "Asphalt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "extreme": [
+          {
+            "name": "Orage",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Rouské",
+        "length": 32.36,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Lukoveček",
+        "length": 32.34,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Raztoka",
+        "length": 15.4,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Žabárna",
+        "length": 15.42,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Provodovice",
+        "length": 16.99,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Chvalčov",
+        "length": 16.94,
+        "id": 6
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#7 - Vítová",
+        "length": 8.77,
+        "id": 7
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#8 - Brusné",
+        "length": 8.77,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Libosváry",
+        "length": 14.73,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Rusava",
+        "length": 14.64,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Osíčko",
+        "length": 8.94,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Přikazy",
+        "length": 8.65,
+        "id": 12
+      }
+    ]
+  },
+  "Poland": {
+    "type": "Dirt",
+    "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Swietajno",
+        "length": 18.5,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Jelonek",
+        "length": 18.1,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Gajrowskie",
+        "length": 10,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Pietrasze",
+        "length": 9.7,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Dybowo",
+        "length": 8.5,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Chelchy",
+        "length": 8.5,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Mikolajki",
+        "length": 9.4,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Zawada",
+        "length": 9.5,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Gmina Mragowo",
+        "length": 4.4,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Czerwonki",
+        "length": 4.5,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Kosewo",
+        "length": 4.8,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Probark",
+        "length": 4.6,
+        "id": 12
+      }
+    ]
+  },
+  "Latvia": {
+    "type": "Dirt",
+     "weathers": {
+      "Hiver": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide",
+              "neige"
+            ],
+            "nextState": [
+              "sec",
+              "humide",
+              "neige"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Neige légère",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Neige abondante",
+            "state": [
+              "neige"
+            ],
+            "nextState": [
+              "neige",
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Printemps": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Été": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      },
+      "Automne": {
+        "basic": [
+          {
+            "name": "Dégagé",
+            "state": [
+              "sec"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Quelque nuage",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Nuageux",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          },
+          {
+            "name": "Couvert",
+            "state": [
+              "sec",
+              "humide"
+            ],
+            "nextState": [
+              "sec",
+              "humide"
+            ]
+          }
+        ],
+        "light_precip": [
+          {
+            "name": "Pluie fine",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ],
+        "heavy_precip": [
+          {
+            "name": "Forte pluie",
+            "state": [
+              "humide"
+            ],
+            "nextState": [
+              "humide",
+              "sec"
+            ]
+          }
+        ]
+      }
+    },
+    "stages": [
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#1 - Vecpils",
+        "length": 16.3,
+        "id": 1
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#2 - Kagene",
+        "length": 16.3,
+        "id": 2
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#3 - Maziljaja",
+        "length": 8.5,
+        "id": 3
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#4 - Kirsits",
+        "length": 8.4,
+        "id": 4
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#5 - Baznica",
+        "length": 7.6,
+        "id": 5
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#6 - Strokacs",
+        "length": 7.7,
+        "id": 6
+      },
+      {
+        "type": "Full",
+        "direction": "Forward",
+        "name": "#7 - Podnieki",
+        "length": 9.9,
+        "id": 7
+      },
+      {
+        "type": "Full",
+        "direction": "Reverse",
+        "name": "#8 - Dinsdurbe",
+        "length": 9.9,
+        "id": 8
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#9 - Kalvene",
+        "length": 4.9,
+        "id": 9
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#10 - Cerpi",
+        "length": 4.9,
+        "id": 10
+      },
+      {
+        "type": "Part",
+        "direction": "Forward",
+        "name": "#11 - Krote",
+        "length": 4.9,
+        "id": 11
+      },
+      {
+        "type": "Part",
+        "direction": "Reverse",
+        "name": "#12 - Kaleti",
+        "length": 5,
+        "id": 12
+      }
+    ]
+  }
+}
