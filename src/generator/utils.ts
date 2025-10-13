@@ -67,12 +67,16 @@ export const isWeatherIsCorrect = (
   return true;
 };
 
-export const createWeatherWeight = (season: TSeason, weathers: TWeather) => {
+export const createWeatherWeight = (
+  season: TSeason,
+  weathers: TWeather,
+  userModifier: { [type in TSeason]: number }
+) => {
   const percentPrecip = {
-    Hiver: 0.35,
-    Printemps: 0.2,
-    Été: 0.15,
-    Automne: 0.25,
+    Hiver: 0.35 * userModifier["Hiver"],
+    Printemps: 0.1 * userModifier["Printemps"],
+    Été: 0.05 * userModifier["Été"],
+    Automne: 0.15 * userModifier["Automne"],
   };
 
   const weathersPrecipWeight = {
@@ -82,7 +86,7 @@ export const createWeatherWeight = (season: TSeason, weathers: TWeather) => {
   };
 
   return {
-    basicClear: [0.5, 0.5, 0, 0, 0],
+    basicClear: [0.3, 0.5, 0.2 * percentPrecip[season], 0, 0],
     basicCloud: [0.5, 0.5, 0.7 * percentPrecip[season], 0.3 * percentPrecip[season], 0],
     light_precip: [
       0,
@@ -108,7 +112,7 @@ export const createWeatherWeight = (season: TSeason, weathers: TWeather) => {
     weathersChoiceWeight: {
       basicClear: [1, 0, 0, 0],
       basicCloud: [0, 1, 1, 1],
-      ...weathersPrecipWeight
+      ...weathersPrecipWeight,
     },
   };
 };

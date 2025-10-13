@@ -20,7 +20,7 @@ import {
   TGeneratedStage,
 } from "src/types";
 
-const limitLongStage = 16;
+const limitLongStage = 17;
 const seasons: TSeason[] = ["Hiver", "Printemps", "Été", "Automne"];
 const seasonWeigh = [0.15, 1, 1, 1];
 const weathersType: TWeatherType[] = [
@@ -96,7 +96,8 @@ export const generateStages = (
   duration: number,
   percentageLongStage: number,
   kmAssist: number,
-  season: TSeason
+  season: TSeason,
+  userModifier: {[type in TSeason]: number}
 ): { stages: TGeneratedStage[]; distance: number } => {
   const { stages, weathers } = rallyData;
   let rallyDistance = 0;
@@ -106,8 +107,8 @@ export const generateStages = (
   let weights = Array(stages.length).fill(1);
 
   if (!weathers[season]) throw `Data error no weather for ${season}`
-  const weatherWeight = createWeatherWeight(season, weathers[season]);
-
+  const weatherWeight = createWeatherWeight(season, weathers[season], userModifier);
+  
   while (rallyDistance < duration - 2) {
     let stage = weightedRandom(stages, weights);    
     if (

@@ -3403,6 +3403,7 @@
             ],
             "nextState": [
               "humide",
+              "neige",
               "sec"
             ]
           }
@@ -3852,6 +3853,7 @@
             ],
             "nextState": [
               "humide",
+              "neige",
               "sec"
             ]
           }
@@ -7085,7 +7087,7 @@
   },
   "Latvia": {
     "type": "Dirt",
-     "weathers": {
+    "weathers": {
       "Hiver": {
         "basic": [
           {
