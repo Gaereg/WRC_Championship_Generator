@@ -201,7 +201,7 @@ function App() {
               onClick={generate}
               disabled={!nbRally || !rallyDistance}
             >
-              Aléatoire
+              Générer Championnat Aléatoire
             </Button>
             <CardButtonGroup title="InGame Saison 2023" disabled={!rallyDistance}>
               <Button disabled>JWRC</Button>

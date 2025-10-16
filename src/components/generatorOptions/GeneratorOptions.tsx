@@ -64,8 +64,8 @@ const TextFieldPercentage = ({
 const optionWeather = [
   { value: "0.5", label: "faible" },
   { value: "1", label: "par défaut" },
-  { value: "2", label: "forte" },
-  { value: "2.5", label: "très forte" },
+  { value: "2.5", label: "forte" },
+  { value: "5", label: "très forte" },
 ];
 
 const Select = ({
