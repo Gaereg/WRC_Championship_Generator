@@ -3,6 +3,7 @@ export type TSeason = "Hiver" | "Printemps" | "Été" | "Automne";
 export type TLocation = {
   name: TRallyName;
   type: string;
+  isOnlyWinter?: boolean;
 };
 
 export type TLocationSeason = TLocation & {
@@ -53,7 +54,7 @@ export type TWeather = {
 export type TWeatherData = { name: string; state: string[]; nextState: string[] };
 
 export type TData = {
-  [type in TRallyName ]: TRallyData;
+  [type in TRallyName]: TRallyData;
 };
 
 export type TSavedChampionship = {

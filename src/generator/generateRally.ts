@@ -21,7 +21,7 @@ import {
 } from "src/types";
 
 const limitLongStage = 17;
-const seasons: TSeason[] = ["Hiver", "Printemps", "Été", "Automne"];
+export const seasons: TSeason[] = ["Hiver", "Printemps", "Été", "Automne"];
 const seasonWeigh = [0.15, 1, 1, 1];
 const weathersType: TWeatherType[] = [
   "basicClear",

@@ -28,18 +28,27 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import uniqid from 'uniqid';
+import uniqid from "uniqid";
 import CardButtonGroup from "@components/CardButtonGroup/CardButtonGroup";
 import GeneratorOptions from "@components/generatorOptions/GeneratorOptions";
 
 const data = _data as TData;
 const savedChampionship = _savedChampionship as TSavedChampionship;
 
-const typedKeysData = Object.keys(data) as TRallyName[]
-const rallyLocations: TLocation[] = typedKeysData.map((rally) => ({
-  name: rally,
-  type: data[rally].type,
-}));
+const typedKeysData = Object.keys(data) as TRallyName[];
+const rallyLocations: TLocation[] = typedKeysData
+  .map((rally) => ({
+    name: rally,
+    type: data[rally].type,
+    isOnlyWinter: !data[rally].weathers.Printemps
+  }))
+  .sort((a, b) => {
+    if (a.name.toUpperCase() < b.name.toUpperCase()) return -1;
+    if (a.name.toUpperCase() > b.name.toUpperCase()) return 1;
+    return 0
+  });
+
+console.log(rallyLocations);
 
 function App() {
   const [championship, setChampionship] = useState<TRally[]>([]);
@@ -208,6 +217,7 @@ function App() {
         </Box>
         {championship.map((rally: TRally, idx) => (
           <Rally
+            locationChoices={rallyLocations}
             rally={rally}
             idx={idx}
             key={rally.id}
